@@ -1,0 +1,13 @@
+#!/bin/bash
+# Script cpd
+# Usage
+now=$(date +"%b%d-%Y-%H%M%S")
+
+FILE="$1"
+
+
+name="${FILE%.*}"
+ext="${FILE##*.}"
+
+cp -v $FILE $name-$now.$ext
+

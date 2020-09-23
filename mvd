@@ -1,0 +1,11 @@
+#!/bin/bash
+
+now=$(date +"%b%d-%Y-%H%M%S")
+
+FILE="$1"
+
+name="${FILE%.*}"
+ext="${FILE##*.}"
+
+mv -v $FILE $name-$now.$ext
+
