@@ -1,6 +1,14 @@
 #!/bin/bash
-# Script cpd
-# Usage
+
+# Shell script to copy file to a new, with date added to filename, 
+# before the extension.
+#
+# Author: Manuel López Mateos, under GPL-3.0 License
+#	  https://manuel.lopez-mateos.net
+# 
+# Last change: Sep 24, 2020
+# ------------------------------------------------------------
+
 now=$(date +"%b%d-%Y-%H%M%S")
 
 FILE="$1"
