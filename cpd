@@ -6,10 +6,11 @@
 # Author: Manuel López Mateos, under GPL-3.0 License
 #	  https://manuel.lopez-mateos.net
 # 
-# Last change: Sep 24, 2020
+# Last change: Jun 20, 2023. Add colon after Hour and Minutes
+# Sep 24, 2020
 # ------------------------------------------------------------
 
-now=$(date +"%b%d-%Y-%H%M%S")
+now=$(date +"%b%d-%Y-%H:%M:%S")
 
 FILE="$1"
 
