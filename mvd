@@ -6,11 +6,13 @@
 # Author: Manuel López Mateos, under GPL-3.0 License
 #	  https://manuel.lopez-mateos.net
 #
-# Last change: Jun 20, 2023. Add colon after Hour and Minute 
+# Last change: Jun 20, 2023, 21:22 Delete colons and add h after Hour, m after Minutes and s after Seconds
+#              (Some servers don't allow upload files with colons in their name)
+# Jun 20, 2023. Add colon after Hour and Minute 
 # Sep 24, 2020
 # ------------------------------------------------------------
 
-now=$(date +"%b%d-%Y-%H:%M:%S")
+now=$(date +"%b%d-%Y-%Hh%Mm%Ss")
 
 FILE="$1"
 
